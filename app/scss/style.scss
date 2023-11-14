@@ -2,6 +2,17 @@
 @import '_global';
 @import '_fonts';
 //start header
+.header{
+    background-color: #fff;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
 .header__top-inner{
     display: flex;
     justify-content: space-between;
@@ -90,6 +101,9 @@
         color: #fff;
     }
 }
+.header__btn-menu{
+    display: none;
+}
 .notification{
     span{
 background-color: $yellow;
@@ -101,12 +115,14 @@ background-color: $tomate;
     }
 }
 .basket{
+    margin-right: 20px;
     position:relative ; 
     top: 9px;
     span{
 background-color: $green;
     }
   &__menu{
+    z-index: 1;
     border: 1px solid #e0e0e0;
     position: absolute;
     transition: all .3s;
@@ -210,7 +226,6 @@ display: none;
  }
 }
 .user{
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -419,6 +434,105 @@ border-radius: 50%;
 }
 
 //end header
+//start modal
+#modal{
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.login__title{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    @include f700;
+}
+
+.login__wrapper{
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label{
+     position: relative;
+     &::before{
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 14px;
+        color: #fff;
+        left: 18px;
+        top: 9px;
+     }
+    }
+    .login__label-name::before{
+        content:'\f007'
+    }
+    .login__label-pass::before{
+        content:'\f023'
+    }
+    input{
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 40px;
+        display: block;
+        width: 100%;
+        &::placeholder{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    button{
+        margin-top: 19px;
+        padding: 15px 0 15px;
+        background-color: #fff;
+        width: 140px;
+        text-transform: uppercase;
+        border: none;
+        margin-right: 10px;
+        @include f700;
+        color: #000;
+        text-align: center;
+        box-shadow: 0 2px 2px 0 rgba(118,174,54, 0.75);
+    }
+    .lost-pass{
+        display: block;
+        margin-top: 20px;
+        color: #fff;
+        font-size: 18px;
+    }
+    .create-acc{
+        margin-top: 19px;
+        padding: 15px 0 15px 28px;
+        text-align: center;
+        width: 245px;
+        background-color: #76ae36;
+        color: #fff;
+        font-size: 18px;
+        position: relative;
+      &::before{
+    content:'\f044';
+    font-family: 'icomoon';
+    position: absolute;
+    top: 15px;
+    left: 35px;
+    }
+
+    }
+}
+.fancybox__content>.f-button.is-close-btn {
+    top: 0px;
+    right: 5px;
+    }
+
+//end modal
+
 //start search
 .search{
     text-align: center;
@@ -747,6 +861,7 @@ font-size: 14px;
 //end tutorials
 //start footer
 .footer{
+    flex: 0 0 auto;
     background-color: $bg;
   &__inner{
     display: flex;
@@ -907,4 +1022,6 @@ font-size: 14px;
 }
 //end footer
 
+
+@import 'media.scss';
 
