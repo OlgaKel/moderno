@@ -93,3 +93,16 @@ body{
         font-size: 14px;
     }
 }
+.aside__item{
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.aside__title{
+    font-size: 20px;
+    @include f700;
+    color: $bg;
+    border-bottom: 1px solid #dde3e8;
+    padding-bottom: 24px;
+}
