@@ -261,92 +261,76 @@
           <div class="breadcrumbs__inner">
             <ul class="breadcrumbs__list">
               <li> <a href="#">Home</a></li>
-              <li> <span>Settings</span></li>
+              <li> <span>Upload Product</span></li>
             </ul>
           </div>
         </div>
       </div>
-      <section class="settings">
+      <section class="upload">
         <div class="container">
-          <div class="settings__inner">
-            <div class="product-one__tabs settings__tabs">
-              <div class="tabs">
-                <span class="tab angel-right active" data-id="1">Personal Information</span>
-                <span class="tab angel-right" data-id="2">Profile</span>
-                <span class="tab angel-right" data-id="3">Badges</span>
-                <span class="tab angel-right" data-id="4">E-mail Settings</span>
-                <span class="tab angel-right" data-id="4">Social Network</span>
+          <form>
+            <div class="upload__inner">
+              <div class="upload__inner-title">Upload Your item</div>
+              <div class="upload__inner-content">
+                <div class="upload-line">
+                  <label>Select Categories <span>*</span></label>
+                  <select>
+                    <option>Select</option>
+                    <option>Select</option>
+                    <option>Select</option>
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div class="upload-line">
+                  <label>Product Name <span>*</span></label>
+                  <input type="text" required placeholder="Enter your product name here ...">
+                </div>
+                <div class="upload-line">
+                  <label>Product Description <span>*</span></label>
+                  <textarea placeholder="<h1> Type your text  here </h1/>"></textarea>
+                </div>
+                <div class="upload-line">
+                  <label>Upload Main File <span>*</span></label>
+                  <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                </div>
+                <div class="upload-line">
+                  <label>Upload Screenshots <span>*</span></label>
+                  <input type="file" required data-placeholder="No File Choosen" data-browse="Choose File">
+                </div>
+                <div class="upload-line">
+                  <label>File Included <span>*</span></label>
+                  <select>
+                    <option>Select File Type</option>
+                    <option>Select File Type</option>
+                    <option>Select File Type</option>
+                    <option>Select File Type</option>
+                  </select>
+                </div>
+                <div class="upload-line">
+                  <label>File Dimensions <span>*</span></label>
+                  <input type="text" required placeholder="Enter the item  dimentionss here ...">
+                </div>
+                <div class="upload-line">
+                  <label>Item Tags <span>*</span></label>
+                  <input type="text" required placeholder="Enter Tag Here">
+                </div>
               </div>
-              <div class="tab__content">
-                <div class="tab-item active-tab" id="1">
-                  <div class="page-box">
-                    <div class="page-box__title">
-                      Personal Information
-                    </div>
-                    <div class="page-box__content">
-                      <form>
-                        <div class="settings__line">
-                          <label>First Name</label>
-                          <input type="text">
-                        </div>
-                        <div class="settings__line">
-                          <label>Last Name</label>
-                          <input type="text">
-                        </div>
-                        <div class="settings__line">
-                          <label>Company Name</label>
-                          <input type="text">
-                        </div>
-                        <div class="settings__line">
-                          <label>Country</label>
-                          <select>
-                            <option>Select Your Country</option>
-                            <option>Select Your Country</option>
-                          </select>
-                        </div>
-                        <div class="settings__line">
-                          <label>Address Line 1</label>
-                          <input type="text">
-                        </div>
-                        <div class="settings__line">
-                          <label>Address Line 2</label>
-                          <input type="text">
-                        </div>
-                        <div class="settings__line">
-                          <label>City</label>
-                          <input type="text">
-                        </div>
-                        <div class="settings__line">
-                          <label>State / Province / Region</label>
-                          <input type="text">
-                        </div>
-                        <div class="settings__line">
-                          <label>Zip / Postal Code</label>
-                          <input type="text">
-                        </div>
-                        <button class="settings__btn" type="submit">Update</button>
-                      </form>
-                    </div>
-                  </div>
+              <div class="upload__inner-title">Set Your Price (US$)</div>
+              <div class="upload__inner-content">
+                <div class="upload-line">
+                  <label>Regular License <span>*</span></label>
+                  <input type="text" required placeholder="$00.00">
                 </div>
-                <div class="tab-item" id="2">
-
+                <div class="upload-line">
+                  <label>Extended License <span>*</span></label>
+                  <input type="text" required placeholder="$00.00">
                 </div>
-                <div class="tab-item" id="3">
-
-                </div>
-                <div class="tab-item" id="4">
-
-                </div>
+                <button class="upload__btn" type="submit">Submit</button>
               </div>
             </div>
-          </div>
+          </form>
         </div>
       </section>
-
-
-
-
     </div>
     <footer class="footer">
       <div class="footer__content">

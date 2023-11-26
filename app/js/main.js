@@ -17,7 +17,7 @@ slidesToScroll:4
   });
 
   Fancybox.bind("[data-fancybox]", {
-    // Your custom options
+    // Your custom 
   });
 
   $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function(event) {
@@ -29,6 +29,7 @@ slidesToScroll:4
       return false;
     });
     
+    $('input[type="file"], select').styler();
 
  /**$(".rate-star").rateYo({
     rating: 5,
