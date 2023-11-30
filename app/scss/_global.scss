@@ -60,9 +60,15 @@ body{
 .breadcrumbs{
     &__inner{
         padding: 45px 0px 40px;
-        position: relative;
-        & + li{
-            padding-left: 24px;
+        overflow: hidden;
+        width: 1200px;
+    }
+    &__list{
+        li{
+            display: inline-block;
+            position: relative;
+            & + li{
+                padding-left: 24px;
             &::before{
                 content:'-';
                 position: absolute;
@@ -81,6 +87,7 @@ body{
         color: #b0bec5;
     }
 }
+}
 .angel-right{
     position: relative;
     padding-left: 15px;
@@ -95,9 +102,10 @@ body{
 }
 .aside__item{
     background-color: #fff;
-    border: 1px solid #d7d7d7;
-    padding: 30px;
+    border: 1px solid #dedede;
+    padding: 0 32px 32px;
     margin-bottom: 30px;
+    width: 270px;
 }
 .aside__title{
     font-size: 20px;
@@ -105,4 +113,7 @@ body{
     color: $bg;
     border-bottom: 1px solid #dde3e8;
     padding-bottom: 24px;
+}
+#modal{
+    display: none;
 }
